@@ -1,0 +1,67 @@
+Message Time and Details
+
+Blinded_ID – Patient ID
+HMID – Unique ID for Data Monitoring Session & Transmission
+HMENDMI – Date/Time of when monitoring period ended
+HMDURMI – Duration of monitoring (in seconds)
+HMMSGCNT – Message # for each patient
+Date – For patients who received device therapy, date that therapy was delivered. For control patients (patients who did not receive therapy), date is the last day of transmission in the included dataset
+mod.time – hour of day that monitoring session terminated
+mod.date – modified date field – this more accurately represents the day that the home monitoring session covered. Ie. if the transmission ended at 12:30am, the date of transmission was offset by one day. This was done for all transmissions prior to 9:00am.
+Countdown.day – number of days prior to date of interest (Date Column – Mod.Date Column). Transmissions on the day of event were excluded
+
+Heart Rate (All are likely colinear) 
+
+HMMAHR24  - Mean Atrial Heart Rate (bpm)
+HMMHR24 – Mean Ventricular Heart Rate (bpm)
+HMMHRR – Mean Ventricular Heart Rate at Rest (bpm)
+
+Heart Pacing/Impedance
+
+HMRAPIMP – Right Atrium Pacing Impedance (Ohm)
+HMRVPIMP – Right Ventricle Pacing Impedance (Ohm)
+HMPSHIMP – SH Daily Shock Lead Impedance (Ohm)
+HMRAPACE – Atrial Pacing (%)
+HMRVPACE – RV Pacing (%)
+
+Pacing/Sensing Distribution (All values add up to 100% for each patient on each day)
+
+HMASVS – Intrinsic Rhythm, Atrium Sensed, Ventricle Sensed (%)
+HMASVP – VAT Stimulation – Atrium Sensed, Ventricle Paced (%)
+HMAPVS – Conducted Atrial Pacing – Atrium Paced, Ventricle Sensed (%)
+HMAPVP – Dual Chamber Pacing – Atrium Paced, Ventricle Paced (%)
+HMVXVX – VV Sequence – Two ventricular beats without an interceding atrial beat (%)
+
+Other Measures
+
+HMABURD – Atrial Burden, the amount of time spent in AF (%)
+HMMSC24 – Number of Mode Switches Per Day (int)
+HMPPVAR – Variability in the P-wave measured by device (ms)
+HMMEANPVC – Mean number of premature ventricular contractions per hour (int)
+HMACTP – Patient Activity (%)
+
+Episode Counts
+
+HMSVT – Number of SVT Episodes (count, all time)
+HMSVTSMART – Number of SVT Episodes (SMART Detection by device, only) – these are included in the number above. (Count, all time)
+HMATREPI – Number of atrial monitoring episodes (count, all time)
+HMVT1 – Ventricular Tachycardia (Zone 1) Episodes (count, all time)
+HMVT2 -- Ventricular Tachycardia (Zone 2) Episodes (count, all time)
+HMVF -- Ventricular Fibrillation (Zone 1) Episodes (count, all time)
+HMSMARTAF – Atrial Fibrillation Episodes (SMART Detection), (count, all time)
+HMSMARTAT – Atrial Flutter Episodes (SMART Detection), (count, all time)
+HMSMARTSINTA – Sinus Tachycardia Episodes (SMART Detection), (count, all time)
+HMSMART11 – 1:1 Detection (SMART Detection), (count, all time)
+
+
+Baseline Data Notes
+
+Group: 0 = control, 1 = Inappropriate Therapy, 2 = Appropriate Therapy
+Device = Type of Device Used
+NYHA = Class of Heart Failure, Ordinal Factor Variable
+CHADS = Stroke Risk Score, Ordinal Factor Variable
+LVEF = Left Ventricular Ejection Fraction (%)
+nDaysInStudy = Days in larger IMPACT Trial
+nTransmissions = Number of home monitoring transmissions throughout trial
+Hemoglobin = continuous variable
+
