@@ -1,0 +1,180 @@
+%%%%%%%%%%%%%%%%%%%%%% LaTeX Resume Template %%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%  Ishanu Chattopadhyay  ixc128@psu.edu%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Document Setup %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\documentclass[10pt]{article}
+\documentclass[10pt,onecolumn,compsoc]{IEEEtran}
+\let\labelindent\relax
+\usepackage{enumitem}
+\usepackage[letterpaper, top=.5cm, left=2.5cm, right=3.0cm, bottom=2.0cm, includehead, includefoot]{geometry}
+%
+\input{preamble.tex} 
+%\usepackage[printwatermark]{xwatermark}
+\usepackage{wallpaper}
+\usepackage{wasysym}
+\usepackage[misc]{ifsym}
+%\usepackage{applicationN}
+\usepackage[normalem]{ulem}
+\usepackage{epigraph} 
+%\usepackage{pifont}
+%\usepackage{fancyhdr}
+\newcommand{\Space}{\vspace{10pt}}
+\newcommand{\SpaceS}{\vspace{4pt}}
+%%%%%%%%%%%%%%%%%%%%%%%%% Begin CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\tikzexternalize[prefix=./Figures/ExtApp/]% activate externalization!
+\tikzexternaldisable
+\newcommand{\ColorA}{\color{black!70}}
+\newcommand{\ColorB}{\color{Red4!10!black}}
+\newcommand{\ColorD}{\color{darkgray}}
+\newcommand{\ColorBb}{\ColorB}
+\newcommand{\ColorE}{\color{darkgray}}
+\newcommand{\ColorX}{\color{Blue3}}
+\def\Me#1{\def\me{#1}}
+\Me{\sffamily\ColorA {\bf \fontsize{10}{10}\selectfont\color{IndianRed4}Ishanu Chattopadhyay}\\
+Assistant Professor\\
+ Section of Hospital Medicine\\
+Department of Medicine\\
+Institute for Genomics \& Systems Biology\\
+%Computation Institute\\
+%University of Chicago\\
+900 E 57th Street\\
+KCBD 10152\\
+Chicago IL 60637\\
+\phone: 814 5315312\\
+\Letter: ishanu@uchicago.edu\\{\fontsize{7}{7}\selectfont\sffamily\color{Red3}
+\href{https://zed.uchicago.edu}{https://zed.uchicago.edu}}}
+
+\setlength{\headsep}{.25in}
+\addtolength{\textheight}{.5in}
+\addtolength{\voffset}{-.3in}
+\renewcommand{\baselinestretch}{1}
+\chead{}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0.1pt}
+\lhead{
+\includegraphics[width=3.1in]{Figures/RGBPNG/maroon}
+\vskip  1.95em
+%
+\bf \sffamily \fontsize{7}{8}\selectfont \ColorA
+Department of Medicine\\
+5841 South Maryland Avenue\\
+Chicago, IL 60637\\
+\phone: 773 7021234\\
+}
+\rhead{
+\ColorA
+  \footnotesize \me \\
+}
+\rfoot{\scriptsize\bf\sffamily\ColorA  \thepage}
+\cfoot{\scriptsize\bf\sffamily \ColorA Chattopadhyay}
+\lfoot{\scriptsize\bf\sffamily \ColorA \today}
+% #######################################################################
+\def\STARTDATE{April 20, 2018 }
+\def\ENDDATE{August 30, 2018}
+
+% #######################################################################
+%\newwatermark[allpages,color=red!50,angle=0,scale=3,xpos=0,ypos=0]{Figures/uchicago}
+%\CenterWallPaper{.25}{Figures/phoenix/gray} 
+
+\AtBeginDocument{% 
+  \immediate\write18{shasum \jobname.tex | awk '{print $1}'>  \jobname.hash}
+}
+
+\cfoot{\scriptsize \bf \color{lightgray} \jobname.tex $\circ$  shasum $\circ$  \input{\jobname.hash}}  
+
+
+%$
+
+\def\NAME{Machine Learning \& Advanced Analytics for Biomedicine}
+\begin{document}
+\lhead{}
+\rhead{\bf\sffamily\scriptsize \NAME}
+\parskip=0pt
+\parindent=0pt
+
+%\Space
+%\Space
+% #######################################################################
+% #######################################################################
+\fontsize{9}{11}\selectfont
+$\phantom{.}$
+
+\vspace{-20pt}
+
+\section*{}
+
+\begin{itemize}
+
+\item \textbf{Section Number:}  01
+\item \textbf{Course Name:}  \textcolor{Tomato}{\bf \NAME}
+\item \textbf{Course Number:}  \textcolor{Tomato}{CCTS 40500}
+\item \textbf{Units:}  100 units
+\item \textbf{Instructor/s:} Ishanu Chattopadhyay (ishanu@uchicago.edu)
+\item \textbf{Prerequisites/Remarks:} Basic familiarity with  coding in python, Linux commandline, RCC cluster environment familarity will be helpful, but not necessary
+\item \textbf{Enrollment limit:} None
+\item \textbf{Is the course undergrad, graduate, or mixed level:} Mixed Level
+\item \textbf{Cross list: CCTS 20500, BIOS 29208} 
+
+
+\end{itemize}
+% #######################################################################
+\section*{Course Description}
+
+Easy accessibility to data is rapidly transforming scientific research, and advanced analytics powered by sophisticated 
+learning algorithms  is uncovering new insights, and solutions to hard problems.  The goal of this course  is to provide an introductory overview of the key concepts in machine learning, outlining the potential applications in biomedicine and sociology. Beginning from basic statistical concepts, we will discuss  implementations of standard and state of the art classification and prediction algorithms, and go on to discuss  more advanced topics in unsupervised learning, deep learning architectures, and stochastic time series analysis. We will also cover emerging ideas in data-driven causal inference, and demonstrate applications in uncovering etiological insights from large scale datasets including clinical databases of electronic health records, publicly available sequence and  omics datasets in biology, and large scale geospatial datasets in sociology.
+
+\section*{Learning Goals}
+
+The  acquisition of hands-on skills will be emphasized over machine learning theory. On successfully completing the course, students will   have acquired enough knowledge of the underlying machinery to intuit and implement solutions to  non-trivial data science problems. Rudimentary knowledge of probability theory, and basic exposure to scripting languages such as python is required. 
+
+\section*{Planned Assessments}
+Students will be required to turn in solutions to take-home modeling problems, with scripted software in Python.
+There will be one mid-term assignment, and one final assignment/project. Homework problems will be assigned regularly but not weekly. Final assessment will depend on the performanace on  the assignments and the homework problems, and the level of engagement and interest perceived by the instructor.
+
+
+
+\def\COLA{\color{gray}}
+\def\COLB{\color{SeaGreen4}}
+
+\section*{Tentative Syllabus}
+
+\begin{enumerate}\bf\sffamily\fontsize{9}{11}\selectfont
+\COLA
+\item Introduction to Automated Inference, Machine Learning, Probability Theory, \& Statistical Modeling of Data
+\COLB
+\item Review of Linear Algebra \&  Basic Probability theory
+\item Bayesian Inference 
+\item Linear and Logistic Regression 
+\item The MCMCglmm R Library
+\item LASSO and Ridge Regression  
+\item Concepts of Overfitting, \& Regularization
+\COLA
+\item The SkLearn Python Library
+\item Support Vector Machines \& Support Vector Regression
+\item Decision Trees, Random Forests, Extremely Randomized Trees, \& Boosting 
+\COLB
+\item Neural Nets: Multi Layer Perceptrons
+\item Convolutional Neural Nets (CNN)  in Image Classification
+\item Introduction to the Tensorflow Library 
+\item Recurrent Nets (RNN) and Long Short-term Memory (LSTM) Architectures 
+\COLA
+\item Introduction to Stochastic Processes, and Time-series Modeling (ARIMA, GARCH)
+\item Predictive State Representations (PSR) \& Observable Operator Models (OOM)
+\item Probabilistic Finite Automata in Modeling Stochastic Time Series
+\COLB
+\item Zero-knowledge Anomaly Detection 
+\item ML-enabled Tools In Personalized Medicine, and social policy optimization
+\item Exploring Diagnosis \& Screening With Electronic Health Records
+\end{enumerate}
+
+% Texts Suggested:
+\renewcommand\refname{Texts}
+\fontsize{7}{9}\selectfont
+\nocite{*}
+\bibliographystyle{siam}
+\bibliography{course.bib}
+
+% \section*{Instructor Bio}
+% Ishanu Chattopadhyay has a diverse background in machine learning, automated decision-making, stochastic processes and systems biology. He has multiple graduate degrees in engineering, computer science, and mathematics. He earned his doctoral degree from the Pennsylvania State University, and completed his postdoctoral training from Cornell University. As a faculty in the Department of Medicine, Chattopadhyay heads the laboratory for Zero Knowledge Discovery (\href{zed.uchicago.edu}{zed.uchicago.edu}) , where his research focuses on the theory of unsupervised machine learning, and data-driven causal inference in biomedicine. His work has resulted in new  algorithms for pattern discovery in vast structured and unstructured datasets, to gain new insights in data intensive problems arising in biology and biomedicine. Chattopadhyay’s current research interests include 1) the application of deep learning tools to electronic health record databases with the objective of distilling actionable etiological insights into comorbidities of complex diseases, and 2) (predictive ML-augmented biosurveillance) analysis of viral sequence databases to identify emergent patterns that signal impending pandemics, as a part of DARPA's PREEMPT program (https://www.darpa.mil/news-events/2018-01-04) .  Research assistants will have exposure to cutting-edge data science and machine learning methods, and will have the opportunity to apply next generation learning algorithms to investigate etiologies of complex diseases at the molecular and population levels, and translate inferred analytics to clinical decision-making. Assistants are expected to have a basic understanding of statistical models, and previous experience in python scripting.
+
+\end{document}
+

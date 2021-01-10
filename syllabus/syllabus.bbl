@@ -1,0 +1,20 @@
+\begin{thebibliography}{1}
+
+\bibitem{bishop2006pattern}
+{\scshape C.~Bishop}, {\em Pattern Recognition and Machine Learning},
+  Information Science and Statistics, Springer, 2006.
+
+\bibitem{goodfellow2016deep}
+{\scshape I.~Goodfellow, Y.~Bengio, A.~Courville, and F.~Bach}, {\em Deep
+  Learning}, MIT Press, 2016.
+
+\bibitem{murphy2012machine}
+{\scshape K.~Murphy and F.~Bach}, {\em Machine Learning: A Probabilistic
+  Perspective}, Adaptive Computation and Machi, MIT Press, 2012.
+
+\bibitem{bworld}
+{\scshape G.~Varoquaux}, {\em {Scikit-learn tutorial: statistical-learning for
+  sientific data processing}}.
+\newblock \url{http://gael-varoquaux.info/scikit-learn-tutorial/}, 2010.
+
+\end{thebibliography}
