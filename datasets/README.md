@@ -1,6 +1,4 @@
-# Machine Learning for Biomedicine
-
-### Datasets
+#  Datasets
 
 <img src="../logo1.png" alt="drawing" style="width:200px;"/>
 
