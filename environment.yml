@@ -12,4 +12,4 @@ dependencies:
   - bokeh
   - dask
   - scikit-learn
-  - pylab
+  - scipy
