@@ -13,3 +13,4 @@ dependencies:
   - dask
   - scikit-learn
   - scipy
+  - seaborn
