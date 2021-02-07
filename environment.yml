@@ -10,3 +10,5 @@ dependencies:
   - scipy
   - seaborn
   - six
+  - pydotplus
+  - pygraphviz
