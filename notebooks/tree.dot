@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="bone <= 1.5\ngini = 0.5\nsamples = 100.0%\nvalue = [0.5, 0.5]\nclass = lung, head & neck", fillcolor="#ffffff"] ;
+1 [label="mediastinum <= 1.5\ngini = 0.44\nsamples = 44.9%\nvalue = [0.33, 0.67]\nclass = esophasus", fillcolor="#98ccf2"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="supraclavicular <= 1.5\ngini = 0.43\nsamples = 22.4%\nvalue = [0.69, 0.31]\nclass = lung, head & neck", fillcolor="#f1b991"] ;
+1 -> 2 ;
+3 [label="gini = 0.3\nsamples = 4.1%\nvalue = [0.18, 0.82]\nclass = esophasus", fillcolor="#66b3eb"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 18.4%\nvalue = [1.0, 0.0]\nclass = lung, head & neck", fillcolor="#e58139"] ;
+2 -> 4 ;
+5 [label="differentiation <= 2.0\ngini = 0.27\nsamples = 22.4%\nvalue = [0.16, 0.84]\nclass = esophasus", fillcolor="#5eafea"] ;
+1 -> 5 ;
+6 [label="gini = 0.0\nsamples = 10.2%\nvalue = [0.0, 1.0]\nclass = esophasus", fillcolor="#399de5"] ;
+5 -> 6 ;
+7 [label="gini = 0.5\nsamples = 12.2%\nvalue = [0.53, 0.47]\nclass = lung, head & neck", fillcolor="#fcf1e9"] ;
+5 -> 7 ;
+8 [label="sex <= 0.5\ngini = 0.39\nsamples = 55.1%\nvalue = [0.74, 0.26]\nclass = lung, head & neck", fillcolor="#eeae7f"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="gini = 0.0\nsamples = 2.0%\nvalue = [0.0, 1.0]\nclass = esophasus", fillcolor="#399de5"] ;
+8 -> 9 ;
+10 [label="histology <= 2.5\ngini = 0.26\nsamples = 53.1%\nvalue = [0.85, 0.15]\nclass = lung, head & neck", fillcolor="#ea975c"] ;
+8 -> 10 ;
+11 [label="gini = 0.0\nsamples = 44.9%\nvalue = [1.0, 0.0]\nclass = lung, head & neck", fillcolor="#e58139"] ;
+10 -> 11 ;
+12 [label="gini = 0.48\nsamples = 8.2%\nvalue = [0.4, 0.6]\nclass = esophasus", fillcolor="#bfdff7"] ;
+10 -> 12 ;
+}
