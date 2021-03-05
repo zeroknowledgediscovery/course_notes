@@ -8,7 +8,7 @@ import matplotlib.pylab as plt
 
 batch_size = 128
 num_classes = 10
-epochs = 10
+epochs = 3
 
 # input image dimensions
 img_x, img_y = 28, 28
