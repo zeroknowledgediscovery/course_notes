@@ -13,3 +13,6 @@ dependencies:
   - geopy
   - geopandas
   - contextily
+  - pip:
+      - six
+      - pydotplus
