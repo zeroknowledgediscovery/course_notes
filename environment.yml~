@@ -5,6 +5,7 @@ dependencies:
   - numpy
   - scipy
   - pandas
+  - joblib
   - matplotlib
   - scikit-learn
   - seaborn
@@ -14,7 +15,5 @@ dependencies:
   - geopandas
   - contextily
   - pip:
-      - six
-      - pydotplus
-      - tensorflow
-      - keras
+      - haversine
+      - sodapy
