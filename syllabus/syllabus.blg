@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2020)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: syllabus.aux
+The style file: siam.bst
+Database file #1: course.bib
+You've used 4 entries,
+            2030 wiz_defined-function locations,
+            518 strings with 4228 characters,
+and the built_in function-call counts, 978 in all, are:
+= -- 72
+> -- 50
+< -- 0
++ -- 20
+- -- 16
+* -- 68
+:= -- 174
+add.period$ -- 5
+call.type$ -- 4
+change.case$ -- 17
+chr.to.int$ -- 0
+cite$ -- 4
+duplicate$ -- 48
+empty$ -- 92
+format.name$ -- 16
+if$ -- 197
+int.to.chr$ -- 0
+int.to.str$ -- 4
+missing$ -- 6
+newline$ -- 16
+num.names$ -- 8
+pop$ -- 31
+preamble$ -- 1
+purify$ -- 16
+quote$ -- 0
+skip$ -- 25
+stack$ -- 0
+substring$ -- 20
+swap$ -- 8
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 10
+warning$ -- 0
+while$ -- 8
+width$ -- 5
+write$ -- 37
