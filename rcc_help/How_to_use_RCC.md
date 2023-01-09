@@ -22,7 +22,7 @@ on a login or compute node, and communicate with that notebook
 from your local machine *over VPN*
 
 Thus, if you execute the following script from 
-`/project2/ishanu/ZED_RESOURCES`, then 
+`./ZED_RESOURCES`, then 
 it starts a notebook instance using the correct ip.
 Then you need to use the path to the notebook, along with the
 key it produces to talk to the instance from your local machine.
