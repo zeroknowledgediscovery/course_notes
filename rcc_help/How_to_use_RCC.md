@@ -130,7 +130,7 @@ For example, if you want to run `sleep 10` on a compute node, you can do:
 
 which produces:
 
-![launch example]( /uploads/lauch_example.png)
+![launch example]( ./uploads/lauch_example.png)
 
 You can see that it creates the sbatch file `ZEDTEST_.sbc` which is used to schedule the job:
 
