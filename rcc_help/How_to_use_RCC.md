@@ -240,14 +240,14 @@ Set the following in gnuplot:
 set term dumb
 ```
 
-Using the example `data.dat` in `/project2/ishanu/ZED_RESOURCES`:
+Using the example `data.dat` in `./ZED_RESOURCES`:
 
 ```
 gnuplot -e 'set term dumb; plot "data.dat" u 1 w lp'
 ```
 produces:
 
-![gnuplot example]( /uploads/gnuplot_example.png)
+![gnuplot example]( ./uploads/gnuplot_example.png)
 
 
 # Monitoring the Queue
