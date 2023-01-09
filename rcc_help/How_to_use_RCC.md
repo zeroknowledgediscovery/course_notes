@@ -47,7 +47,7 @@ If you would rather use the RCC midway as a remote desktop, you can do so via th
 
 [Using Thinlinc]( http://34.66.189.202:4567/uploads/thinlinc.webm)
 
-./uploads/thinlinc.webm
+Copy of the above clip is here: `./uploads/thinlinc.webm`
 
 
 # Launching Jobs on Compute Nodes
