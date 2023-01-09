@@ -45,7 +45,7 @@ Thus, the steps are:
 
 If you would rather use the RCC midway as a remote desktop, you can do so via the thinlinc client, as demonstrated by the short webm:
 
-[Using Thinlinc]( /uploads/thinlinc.webm)
+[Using Thinlinc]( ./uploads/thinlinc.webm)
 
 # Launching Jobs on Compute Nodes
 
